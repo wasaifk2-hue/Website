@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — CoreForge</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="../js/script.js"></script>
+</head>
+<body>
+
+<header>
+  <a href="../index.html" class="logo">Core<span>Forge</span></a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart <span id="cartBadge" class="cart-badge" style="display:none;"></span></a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="products-header">
+  <div class="section-label">// ALL COMPONENTS</div>
+  <h1>Shop Components</h1>
+  <p>In-stock. Tested. Ready to ship.</p>
+</div>
+
+<div class="products-grid">
+
+  <div class="card">
+    <img src="../images/gpu.png" alt="RTX 5080">
+    <div class="card-tag">GPU</div>
+    <h3>RTX 5080</h3>
+    <p>NVIDIA next-gen. 4K gaming and AI-accelerated rendering.</p>
+    <div class="card-bottom">
+      <span class="price">$1,199</span>
+      <button onclick="addToCart('RTX 5080', 1199)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../images/cpu.png" alt="Ryzen 9 9950X">
+    <div class="card-tag">CPU</div>
+    <h3>Ryzen 9 9950X</h3>
+    <p>16-core Zen 5. Handles anything you throw at it.</p>
+    <div class="card-bottom">
+      <span class="price">$599</span>
+      <button onclick="addToCart('Ryzen 9 9950X', 599)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../images/ram.png" alt="32GB DDR5">
+    <div class="card-tag">RAM</div>
+    <h3>32GB DDR5</h3>
+    <p>6000MHz dual-channel. Future-proof memory.</p>
+    <div class="card-bottom">
+      <span class="price">$149</span>
+      <button onclick="addToCart('32GB DDR5 RAM', 149)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../images/storage.png" alt="2TB NVMe SSD">
+    <div class="card-tag">SSD</div>
+    <h3>2TB NVMe SSD</h3>
+    <p>PCIe Gen 5. 7,000 MB/s read. Your games load instantly.</p>
+    <div class="card-bottom">
+      <span class="price">$179</span>
+      <button onclick="addToCart('2TB NVMe SSD', 179)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../images/gpu.png" alt="RTX 4070 Ti">
+    <div class="card-tag">GPU</div>
+    <h3>RTX 4070 Ti</h3>
+    <p>Great 1440p performance at a lower price point.</p>
+    <div class="card-bottom">
+      <span class="price">$699</span>
+      <button onclick="addToCart('RTX 4070 Ti', 699)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../images/cpu.png" alt="Core i9-14900K">
+    <div class="card-tag">CPU</div>
+    <h3>Core i9-14900K</h3>
+    <p>Intel flagship. 24 cores, top single-thread performance.</p>
+    <div class="card-bottom">
+      <span class="price">$549</span>
+      <button onclick="addToCart('Core i9-14900K', 549)">Add to Cart</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="logo">Core<span>Forge</span></span>
+    <p>© 2026 CoreForge · <a href="contact.html">Contact</a> · <a href="about.html">About</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

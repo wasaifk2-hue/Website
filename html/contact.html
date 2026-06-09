@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CoreForge</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="../js/script.js"></script>
+</head>
+<body>
+
+<header>
+  <a href="../index.html" class="logo">Core<span>Forge</span></a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart <span id="cartBadge" class="cart-badge" style="display:none;"></span></a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<div class="contact-page">
+  <div class="section-label">// GET IN TOUCH</div>
+  <h1>Contact Us</h1>
+  <p>Have a question? Fill in the form and we will reply within 24 hours.</p>
+
+  <form class="contact-form" onsubmit="handleContactForm(event)">
+
+    <div class="form-group">
+      <label for="contactName">Your Name</label>
+      <input type="text" id="contactName" placeholder="e.g. John Smith" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contactEmail">Email Address</label>
+      <input type="email" id="contactEmail" placeholder="e.g. john@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contactTopic">Topic</label>
+      <select id="contactTopic">
+        <option>Order Question</option>
+        <option>Component Compatibility</option>
+        <option>Return / Refund</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="contactMessage">Message</label>
+      <textarea id="contactMessage" placeholder="Tell us what you need help with..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">Send Message</button>
+
+  </form>
+
+  <div class="success-msg" id="successMsg">
+     Message sent! We will get back to you within 24 hours.
+  </div>
+
+  <div class="contact-info">
+    <div class="info-card">
+      <h4> Email</h4>
+      <a href="mailto:sales@coreforgepc.com">sales@coreforgepc.com</a>
+    </div>
+    <div class="info-card">
+      <h4> Response Time</h4>
+      <p>Within 24 hours on weekdays</p>
+    </div>
+    <div class="info-card">
+      <h4> Location</h4>
+      <p>Ships worldwide from our warehouse</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="logo">Core<span>Forge</span></span>
+    <p>© 2026 CoreForge · <a href="contact.html">Contact</a> · <a href="about.html">About</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

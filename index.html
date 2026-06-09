@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreForge — PC Components</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Core<span>Forge</span></a>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="html/products.html">Products</a>
+    <a href="html/about.html">About</a>
+    <a href="html/cart.html">Cart <span id="cartBadge" class="cart-badge" style="display:none;"></span></a>
+    <a href="html/contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="home-hero">
+  <div class="hero-content">
+    <span class="eyebrow">// Premium PC Hardware</span>
+    <h1>Built for those who demand more</h1>
+    <p class="hero-sub">Hand-picked components. No compromises. CoreForge has the parts you need.</p>
+    <div class="hero-cta">
+      <a href="html/products.html" class="btn-primary">Shop Components</a>
+      <a href="html/about.html" class="btn-ghost">Why CoreForge</a>
+    </div>
+  </div>
+</section>
+
+<section class="featured">
+  <div class="section-label">// FEATURED PICKS</div>
+
+  <div class="featured-grid">
+
+    <div class="feat-card">
+      <img src="images/gpu.png" alt="RTX 5080">
+      <h3>RTX 5080</h3>
+      <p>4K gaming GPU. Top performance for gamers and creators.</p>
+      <div class="feat-price">$1,199</div>
+      <button onclick="addToCart('RTX 5080', 1199)">Add to Cart</button>
+    </div>
+
+    <div class="feat-card">
+      <img src="images/cpu.png" alt="Ryzen 9 9950X">
+      <h3>Ryzen 9 9950X</h3>
+      <p>16 cores. Powerful workstation CPU for any task.</p>
+      <div class="feat-price">$599</div>
+      <button onclick="addToCart('Ryzen 9 9950X', 599)">Add to Cart</button>
+    </div>
+
+    <div class="feat-card">
+      <img src="images/storage.png" alt="2TB NVMe SSD">
+      <h3>2TB NVMe SSD</h3>
+      <p>7,000 MB/s reads. Super fast storage.</p>
+      <div class="feat-price">$179</div>
+      <button onclick="addToCart('2TB NVMe SSD', 179)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <div class="see-all">
+    <a href="html/products.html">View all components →</a>
+  </div>
+</section>
+
+
+<section class="why">
+  <div class="section-label">// WHY COREFORGE</div>
+
+  <div class="why-grid">
+    <div class="why-item">
+      <h4>Every part tested</h4>
+      <p>We verify every component before shipping</p>
+    </div>
+    <div class="why-item">
+      <h4>Expert curated</h4>
+      <p>Selected by PC builders who know hardware</p>
+    </div>
+    <div class="why-item">
+      <h4>Fast delivery</h4>
+      <p>Most orders arrive in 48 hours</p>
+    </div>
+    <div class="why-item">
+      <h4>Warranty backed</h4>
+      <p>Full manufacturer warranty support included</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span class="logo">Core<span>Forge</span></span>
+    <p>© 2026 CoreForge · <a href="html/contact.html">Contact</a> · <a href="html/about.html">About</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

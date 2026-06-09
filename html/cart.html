@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — CoreForge</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="../js/script.js"></script>
+</head>
+<body>
+
+<header>
+  <a href="../index.html" class="logo">Core<span>Forge</span></a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="cart.html" class="active">Cart <span id="cartBadge" class="cart-badge" style="display:none;"></span></a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="cart-page">
+  <div class="section-label">// YOUR CART</div>
+  <h1>Order Summary</h1>
+  <p>Review your items below before checking out.</p>
+
+  <div class="cart-empty" id="emptyCart" style="display:none;">
+    <p>Your cart is empty.</p>
+    <a href="products.html" class="btn-primary">Browse Components</a>
+  </div>
+
+  <div id="cartContent" style="display:none;">
+    <ul id="cartItems"></ul>
+
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="total">$0</span>
+    </div>
+
+    <div class="cart-actions">
+      <a href="contact.html" class="btn-primary">Proceed to Checkout</a>
+      <button onclick="clearCart()" class="btn-danger">Clear Cart</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="logo">Core<span>Forge</span></span>
+    <p>© 2026 CoreForge · <a href="contact.html">Contact</a> · <a href="about.html">About</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
